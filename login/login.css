@@ -1,0 +1,201 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'vazir black';
+    src: url('/fonts/Vazirmatn-Black.woff2');
+}
+@font-face {
+    font-family: 'vazir bold';
+    src: url('/fonts/Vazirmatn-Bold.woff2');
+}
+@font-face {
+    font-family: 'vazir light';
+    src: url('/fonts/Vazirmatn-Light.woff2');
+}
+@font-face {
+    font-family: 'vazir medium';
+    src: url('/fonts/Vazirmatn-Medium.woff2');
+}
+@font-face {
+    font-family: 'vazir regular';
+    src: url('/fonts/Vazirmatn-Regular.woff2');
+}
+
+/* grid  css */
+
+
+/*  start project */
+
+:root {
+    --vazir-black : 'vazir black' ;
+    --vazir-bold : 'vazir bold' ;
+    --vazir-light : 'vazir light' ;
+    --vazir-medium : 'vazir medium' ;
+    --vazir-regular : 'vazir regular' ;
+    --app-bg-color : #fff ;
+    --section-bg-color : #fff ;
+
+}
+
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+body  {
+    font-size: 1.6rem;
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: var(--vazir-light);
+}
+
+/* reset css */
+
+a {
+    text-decoration: none;
+}
+
+.form {
+    width: 44rem;
+    border: 1px solid #E0E0E2;
+    padding: 4.5rem 3rem;
+    
+    
+}
+.form-logo {
+    display: block;
+    text-align: center;
+
+}
+.form-logo img  {
+    scale: 1.5;
+
+
+}
+.form__title {
+    font-size: 2.2rem;
+    font-family: var(--vazir-bold);
+    margin: 2.8rem 0;
+
+}
+.form__caption {
+    line-height: 1.8;
+    font-family: var(--vazir-light);
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+.form__input {
+    width: 100%;
+    padding: 1.5rem 2rem ;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+}
+.form__submit {
+    margin-top: 3rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: #ef4056;
+    color: #E0E0E2;
+    font-size: 2rem;
+
+}
+.form__accept {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+
+}
+.form__accept a  {
+    color: #008eb2;
+}
+    
+.input__alert {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--vazir-bold);
+    color: #ef4056;
+    display: none;
+}
